@@ -14,40 +14,40 @@
 
 
 function setGame() {
-    // first random number
-    var randomNumber1 = Math.floor((Math.random() * 62) + 1);
-    
-        $("#random-number").text(randomNumber1);
-        
-    // make a counter set to 0
-        var counter = 0;
-    
-    //GLEN:  HINT: use the random number example to create this value!
-    // create an array with the 4 star numbers
-    
-        var stars = $("#stars").children();
-    
-        stars.forEach(function(star) {
-          var random= Math.floor(Math.random()*12)+1;
-          star.attr("star-value", random);
-        });
+  // first random number
+  var randomNumber1 = Math.floor((Math.random() * 62) + 1);
+  
+      $("#random-number").text(randomNumber1);
+      
+  // make a counter set to 0
+      var counter = 0;
+  
+  //GLEN:  HINT: use the random number example to create this value!
+  // create an array with the 4 star numbers
+  
+      var stars = $("#stars").children();
+  
+      stars.forEach(function(star) {
+        var random= Math.floor(Math.random()*12)+1;
+        star.attr("star-value", random);
+      });
 }
 
-    
-  $(".star1").on("click", function() {
-    var starAmount = ($(this).attr("star-value"));
-    starAmount = parseInt(starAmount);
+  
+$(".star1").on("click", function() {
+  var starAmount = ($(this).attr("star-value"));
+  starAmount = parseInt(starAmount);
 
-    counter += starAmount;
+  counter += starAmount;
 
 
-    if (counter === randomNumber1) {
-      alert("You win!");
-    }
+  if (counter === randomNumber1) {
+    alert("You win!");
+  }
 
-    else if (counter > randomNumber1) {
-      alert("You lose!!");
-    }
-    
+  else if (counter > randomNumber1) {
+    alert("You lose!!");
+  }
+  
 
-  });
+});

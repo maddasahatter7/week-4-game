@@ -53,79 +53,14 @@
         <h1>Random Number: <span id="random-number"></span></h1>
 <!-- random number and counter -->
 <div id="stars">
+  <img src="star1" alt="">
+  <img src="star 2" alt="">
+  <img src="star3" alt="">
+  <img src="star4" alt="">
 
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script type="text/javascript"> 
-// first random number
-    var randomNumber1 = 62;
-
-    $("#random-number").text(randomNumber1);
-// make a counter set to 0
-    var counter = 0;
-// create an array with the 4 star numbers
-    var starNumbersarray = [5,3,8,1];
-
-    for (var i = 0; i < starNumbersarray.length; i++) {
-
-    var star1 = $("<img>");
-
-    star1.addClass("star1");
-
-    star1.attr("src", "https://www.universetoday.com/wp-content/uploads/2008/05/foxneutronartwork.jpg");
-
-    star1.attr("star-value", starNumbersarray[0]);
-    $("#stars").append(star1);
-  
-    }
-    for (var i = 0; i < starNumbersarray.length; i++) {
-
-    var star2 = $("<img>");
-
-    star2.addClass("star1");
-
-    star2.attr("src", "http://www.orionsarm.com/im_store/ttauri.png");
-
-    star3.attr("star-value", starNumbersarray[1]);
-    $("#stars").append(star3);
-    }
-    for (var i = 0; i < starNumbersarray.length; i++) {
-
-    var star3 = $("<img>");
-
-    star3.addClass("star1");
-
-    star3.attr("src", "http://www.redorbit.com/media/uploads/2016/03/blackhole.jpg");
-
-    star3.attr("star-value", starNumbersarray[2]);
-    $("#stars").append(star3);
-    }
-    for (var i = 0; i < starNumbersarray.length; i++) {
-
-    var star4 = $("<img>");
-
-    star4.addClass("star1");
-
-    star4.attr("src", "https://content3.bestthinking.com/s/1/topics/500/images/25e6daf0-40a3-495c-8006-5da9e7e9b069_972.jpeg");
-
-    star4.attr("star-value", starNumbersarray[3]);
-    $("#stars").append(star4);
-    }
-    
-
-  
-  
-  $(".star1").on("click", function() {
-    var starAmount = ($(this).attr("star-value"));
-  
-
-
-  });
-  
-</script>
-</script>
-</div>
+<script type="text/javascript" src="./Assets/Javascript/game.js"></script>
 
 </body>
     
